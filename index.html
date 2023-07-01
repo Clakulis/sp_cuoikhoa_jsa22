@@ -4,6 +4,7 @@
 <title>Trại hè Fantasy</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/images/logo.png">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,11 +25,24 @@
         background-size: cover;
     }
     .bgimg{
-        background-image: url("/w3images/wedding_couple.jpg")
+        background-image: url("/images/background1.avif")
     }
-    .bgimg2{
-        background-image: url("/w3images/flowers.jpg")
+    #bgimg2_1{
+        background-image: url("/images/background2.jpg")
     }
+    #bgimg2_2{
+        background-image: url("/images/background3.png");
+        display:none;
+    }
+    #bgimg2_3{
+        background-image: url("/images/background4.webp");
+        display:none;
+    }
+    #bgimg2_4{
+        background-image: url("/images/background5.jpg");
+        display:none;
+    }
+    .my-border{border:1px solid #ccc}
 </style>
 </head>
 <body>
@@ -36,9 +50,9 @@
 <!-- Header / Home-->
 <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
   <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo">Jane & John</h1>
-    <h2>Are getting married</h2>
-    <h2><b>17.07.2017</b></h2>
+    <h1 class="w3-jumbo">TRẠI HÈ FANTASY</h1>
+    <h2>Phiêu lưu đến thế giới của trí tưởng tượng</h2>
+    <h2><b></b></h2>
   </div>
 </header>
 
@@ -46,59 +60,62 @@
 <div class="w3-bottom w3-hide-small">
   <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
     <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
-    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Jane & John</a>
-    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding</a>
-    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Thông tin</a>
+    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Lịch</a>
+    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Đăng ký</a>
   </div>
 </div>
 
-<!-- About / Jane And John -->
+<!-- Thông tin trại hè -->
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
   <div class="w3-content">
-    <h1 class="w3-center w3-text-grey"><b>Jane & John</b></h1>
-    <img class="w3-round w3-grayscale-min" src="/w3images/wedding_couple2.jpg" style="width:100%;margin:32px 0">
-    <p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.</i>
+    <h1 class="w3-center w3-text-grey"><b>Thông tin trại hè</b></h1>
+    <img class="w3-round w3-grayscale-min" src="/images/map.jpeg" style="width:100%;margin:32px 0">
+    <p>Trại hè kéo dài 5 ngày từ thứ 2 đến thứ 5 các tuần trong tháng 6,7, và 8 (chi tiết về lịch ấn nút "Camps Schedule" bên dưới). 5 ngày này, các trại viên sẽ được phiêu lưu vào 
+      thế giới của trí tưởng tượng với các hoạt động như trốn thoát khỏi mê cung, chế tạo vũ khí, ném rìu, bơi cùng người cá, đánh trận giả, cắm trại ... và cuối cùng là vở kịch của 
+      thế giới thần tiên do chính các bạn làm diễn viên chính sẽ được trình diễn cho các vị phụ huynh vào gala tối cuối cùng của trại hè. Các hoạt động này sẽ góp phần giúp các bạn
+      phát triển não bộ thông qua việc sáng tạo, tưởng tượng, các hoạt động giải đố, học được các làm các đồ thủ công, cách cắm trại, rèn luyện diễn xuất, sự tự tin,...
     </p><br>
-    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Lịch Trình</a></p>
   </div>
 </div>
 
-<!-- Background photo -->
-<div class="w3-display-container bgimg2">
+<!-- Ảnh các năm trước -->
+<div class="w3-display-container bgimg2" id="bgimg2_1">
   <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo">You Are Invited</h1><br>
-    <h2>Of course..</h2>
+    <h1 class="w3-jumbo">Hãy tham gia với chúng tôi</h1><br>
+  </div>
+</div>
+<div class="w3-display-container bgimg2" id="bgimg2_2">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Hãy tham gia với chúng tôi</h1><br>
+  </div>
+</div>
+<div class="w3-display-container bgimg2" id="bgimg2_3">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Hãy tham gia với chúng tôi</h1><br>
+  </div>
+</div>
+<div class="w3-display-container bgimg2" id="bgimg2_4">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Hãy tham gia với chúng tôi</h1><br>
   </div>
 </div>
 
-<!-- Wedding information -->
+<!-- Lịch -->
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
   <div class="w3-content">
-    <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
-    <img class="w3-round-large w3-grayscale-min" src="/w3images/wedding_location.jpg" style="width:100%;margin:64px 0">
-    <div class="w3-row">
-      <div class="w3-half">
-        <h2>When</h2>
-        <p>Wedding Ceremony - 2:00pm</p>
-        <p>Reception & Dinner - 5:00pm</p>
-      </div>
-      <div class="w3-half">
-        <h2>Where</h2>
-        <p>Some place, an address</p>
-        <p>Some where, some address</p>
-      </div>
-    </div>
+    <h1 class="w3-text-grey"><b>Lịch trình</b></h1>
+    <img class="w3-round-large w3-grayscale-min" src="/images/camps.jpg" style="width:100%;margin:64px 0">
   </div>
 </div>
 
 <!-- RSVP section -->
 <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
-  <h1>HOPE YOU CAN MAKE IT!</h1>
-  <p class="w3-large">Kindly Respond By January, 2017</p>
+  <h1>ĐĂNG KÝ THAM GIA NGAY</h1>
+  <p class="w3-large">Hotline liên hệ: 0123456789</p>
   <p class="w3-xlarge">
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Đăng ký</button>
   </p>
 </div>
 
@@ -106,29 +123,91 @@
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
     <div class="w3-container w3-white w3-center">
-      <h1 class="w3-wide">CAN YOU COME?</h1>
-      <p>We really hope you can make it.</p>
-      <form>
-        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+      <h1 class="w3-wide">ĐƠN ĐĂNG KÝ</h1>
+      <p>Hotline liên hệ: 0123456789</p>
+      <form id="form-dangky">
+        <input class="w3-input my-border" type="text" placeholder="Họ và tên" id="inp_name">
+        <input class="w3-input my-border" type="text" placeholder="Tuổi" id="inp_age">
+        <input class="w3-input my-border" type="text" placeholder="Số điện thoại phụ huynh" id="inp_phone">
+        <input class="w3-input my-border" type="text" placeholder="Lớp đăng ký" id="inp_class">
       </form>
-      <p><i>Sincerely, John & Jane</i></p>
-      <div class="w3-row">
+      <p><i id="error-displaying" style="color:red;"></i></p>
+      <div class="w3-row">  
         <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+          <button onclick="dangky()" type="button" class="w3-button w3-block w3-green">Xác nhận</button>
         </div>
         <div class="w3-half">
-          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Hủy</button>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-<div class="w3-hide-small" style="margin-bottom:32px"> </div>
-
+<script>
+    function dangky(){
+      var errors = [];
+      var inp_name = document.getElementById("inp_name").value;
+      var inp_age = document.getElementById("inp_age").value;
+      var inp_phone = document.getElementById("inp_phone").value;
+      var inp_class = document.getElementById("inp_class").value;
+      var error_display = document.getElementById("error-displaying");
+      if(inp_name == ""){
+        document.getElementById("inp_name").style.borderColor = "red";
+        errors.push("tên");
+      }
+      else{
+        document.getElementById("inp_name").style.borderColor = "#ccc";
+      }
+      if(inp_age == ""){
+        document.getElementById("inp_age").style.borderColor = "red";
+        errors.push("tuổi");
+      }
+      else{
+        document.getElementById("inp_age").style.borderColor = "#ccc";
+      }
+      if(inp_phone == ""){
+        errors.push("số điện thoại");
+        document.getElementById("inp_phone").style.borderColor = "red";
+      }
+      else{
+        document.getElementById("inp_phone").style.borderColor = "#ccc";
+      }
+      if(inp_class == ""){
+        document.getElementById("inp_class").style.borderColor = "red";
+        errors.push("lớp");
+      }
+      else{
+        document.getElementById("inp_class").style.borderColor = "#ccc";
+      }
+      if(errors.length == 0){
+        var number = localStorage.getItem("query");
+        number = Number(number);
+        localStorage.setItem("query",number+1);
+        alert("Đăng ký thành công!");
+        error_display.innerHTML = "";
+        document.getElementById("form-dangky").reset();
+        var newStu = {name:inp_name, age:inp_age, phonenumber:inp_phone, class:inp_class};
+        var newJSON = JSON.stringify(newStu);
+        localStorage.setItem("hs_"+String(number+1),newJSON);
+      }
+      else{
+        alert("Đăng ký thất bại");
+        error_display.innerHTML = "Không được để trống "+errors+".";  
+      }
+    }
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("bgimg2");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+</script>
 </body>
 </html>
